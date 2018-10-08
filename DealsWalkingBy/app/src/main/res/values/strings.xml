@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Deals Walking By</string>
+    <string name="title_activity_restaurants">RestaurantsActivity</string>
+    <string name="title_activity_restaurant_list_fragment">RestaurantListFragment</string>
+    <string name="title_activity_show_places_on_map">ShowPlacesOnMap</string>
+    <string name="title_activity_google_places">GooglePlaces</string>
+    <string name="title_activity_nearby_places">Map</string>
+    <string name="title_activity_user_navigation_home">UserNavigationHome</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="web_client_id">180860958091-6inml01ds5es4hvme2lsrv8am22uuhf1.apps.googleusercontent.com</string>
+    <string name="title_activity_deal_map">Map</string>
+    <string name="title_activity_nearby">Map</string>
+    <string name="zomato_api"><![CDATA[https://developers.zomato.com/api/v2.1/search?entity_type=city&q=pune&&count=10000]]></string>
+    <string name="zomato_api_sicsr"><![CDATA[https://developers.zomato.com/api/v2.1/search?lat=18.5334&lon=73.8337&sort=real_distance]]></string>
+    <string name="zomato_api_nibm"><![CDATA[https://developers.zomato.com/api/v2.1/search?entity_type=subzone&q=nibm]]></string>
+    <string name="zomato_api_cannaught_place"><![CDATA[https://developers.zomato.com/api/v2.1/search?lat=28.6315&lon=77.2167]]></string>
+    <string name="zomato_api_subzone"><![CDATA[https://developers.zomato.com/api/v2.1/search?q=]]></string>
+    <string name="zomato_new"><![CDATA[https://developers.zomato.com/api/v2.1/search?entity_id=5&entity_type=city&q=]]></string>
+    <string name="category"><![CDATA[&category=]]></string>
+
+
+
+    <string-array name="category_id_array">
+        <item>Delivery</item>
+        <item>Dine-out</item>
+        <item>Nightlife</item>
+        <item>Catching-up</item>
+        <item>Takeaway</item>
+        <item>Cafes</item>
+        <item>Daily Menus</item>
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Pubs &amp; Bars</item>
+        <item>Pocket Friendly Delivery</item>
+        <item>Clubs &amp; Lounges</item>
+    </string-array>
+</resources>

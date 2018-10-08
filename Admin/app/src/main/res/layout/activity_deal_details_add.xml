@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/foodddddd"
+        tools:context="com.example.tejas.admin.dealDetailsAdd">
+
+
+        <EditText
+            android:id="@+id/deal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Deal title"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/deal_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/deal_title"
+            android:layout_alignStart="@+id/deal_title"
+            android:layout_below="@+id/deal_title"
+            android:layout_marginTop="22dp"
+            android:ems="10"
+            android:hint="Deal Description"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/deal_validity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/deal_description"
+            android:layout_alignStart="@+id/deal_description"
+            android:layout_below="@+id/deal_description"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Deal Validity"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewSelectDate"
+            android:layout_alignStart="@+id/textViewSelectDate"
+            android:layout_below="@+id/textViewSelectDate"
+            android:layout_marginTop="268dp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:backgroundTint="@android:color/white"
+            android:onClick="addToFirebase"
+            android:text="Add"
+            android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/open_gallery_imageview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignEnd="@+id/button5"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/button5"
+            android:background="@color/fui_transparent"
+            android:onClick="open_gallery"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_image_icon" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewSelectDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:background="@color/fui_transparent"
+            android:backgroundTint="@color/colorAccent"
+            android:onClick="giveMeLocationAdmin"
+            app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/open_gallery_imageview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Please Upload Image"
+            android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/button5"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:background="@android:color/transparent"
+            android:onClick="dealDeatailsAddBackButtonActivity"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/textViewSelectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deal_validity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:fontFamily="monospace"
+            android:text="Select Date"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/deal_promo_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Promo Code"
+            android:inputType="textPersonName" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/message_shape">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTransparentWhite"
+        android:textStyle="bold"
+        android:text="Tejas Shinde"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/chat_username_text"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/chat_message_text"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/blue_200"
+        android:text="Hi Boys"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9:15pm"
+        android:textColor="@color/blue_200"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "967916542145",
+    "firebase_url": "https://dwb101-c3edb.firebaseio.com",
+    "project_id": "dwb101-c3edb",
+    "storage_bucket": "dwb101-c3edb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:967916542145:android:0f3391c535101c15",
+        "android_client_info": {
+          "package_name": "com.example.tejas.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "967916542145-275p5o3ec2157bcordbnvgptopqurg27.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tejas.admin",
+            "certificate_hash": "07e3cead79878ba325c7792703e35d37a09c38bd"
+          }
+        },
+        {
+          "client_id": "967916542145-3h5gg35orku48obka64dtpabum7iib6o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj3o2rPmpD7NSqLG07Gum7GNMgs-roXcw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "967916542145-3h5gg35orku48obka64dtpabum7iib6o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

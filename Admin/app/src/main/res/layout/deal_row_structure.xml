@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/foodddddd">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="254dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/deal_image"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/deal_image_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deal_image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Image name"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/deal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/deal_image"
+            android:text="Buy one Get one free"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/deal_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deal_title"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/deal_image"
+            android:text="Buy one roll and get the another one free"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/deal_validity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deal_description"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/deal_image"
+            android:background="@color/fui_buttonShadow"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Valid only on fridays"
+            android:textAppearance="@android:style/TextAppearance.Holo"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:id="@+id/dealActivity_latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deal_validity"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/deal_image"
+            android:text="latitude"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/dealActivity_longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dealActivity_latitude"
+            android:layout_alignStart="@+id/dealActivity_latitude"
+            android:layout_below="@+id/dealActivity_latitude"
+            android:text="longitude"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dealActivity_longitude"
+            app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+        <Button
+            android:id="@+id/adminDeleteButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textViewDisplayYear"
+            android:layout_toRightOf="@+id/textViewDisplayYear"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:fontFamily="monospace"
+            android:onClick="deleteActivity"
+            android:text="delete deal "
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageButton2"
+            android:layout_alignLeft="@+id/deal_image_name"
+            android:layout_alignStart="@+id/deal_image_name"
+            android:layout_marginBottom="11dp"
+            android:text="Valid Till : "
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textViewDisplayDay"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_toEndOf="@+id/deal_image_name"
+            android:layout_toRightOf="@+id/deal_image_name"
+            android:textColor="@android:color/holo_red_light"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textViewDisplayMonth"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/dealActivity_longitude"
+            android:layout_alignStart="@+id/dealActivity_longitude"
+            android:layout_alignTop="@+id/textViewDisplayDay"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textViewDisplayYear"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/textViewDisplayMonth"
+            android:layout_toEndOf="@+id/dealActivity_latitude"
+            android:layout_toRightOf="@+id/dealActivity_latitude"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/textViewPromoCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/buttonGetPromo"
+            android:layout_alignLeft="@+id/buttonGetPromo"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/buttonGetPromo"
+            android:layout_alignStart="@+id/buttonGetPromo"
+            android:layout_alignTop="@+id/buttonGetPromo"
+            android:text="PROMO CODE"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="26sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/buttonGetPromo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/textView5"
+            android:layout_toLeftOf="@+id/textViewDisplayYear"
+            android:layout_toStartOf="@+id/textViewDisplayYear"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:fontFamily="monospace"
+            android:text="get promo"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
